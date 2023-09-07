@@ -1,7 +1,9 @@
 import fire
 
-def hello(name="World"):
-  return "Hello %s!" % name
+def hello(amount=1):
+  tax_price = 17
+  tax = (tax_price/100) * amount
+  return tax
 
 if __name__ == '__main__':
   fire.Fire(hello)
